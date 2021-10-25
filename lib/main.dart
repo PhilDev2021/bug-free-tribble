@@ -18,7 +18,7 @@ void main() {
 class DicePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    int leftDiceNumber = 1;
+    int leftDiceNumber = 4;
     return Center(
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
