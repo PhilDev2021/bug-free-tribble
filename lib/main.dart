@@ -24,7 +24,7 @@ class DicePage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           ExpandedDice(
-            imager: "images/dice1$leftDiceNumber.png",
+            imager: "images/dice${leftDiceNumber}.png",
           ),
           ExpandedDice(
             imager: "images/dice2.png",
