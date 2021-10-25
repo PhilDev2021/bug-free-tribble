@@ -22,8 +22,14 @@ class DicePage extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          ExpandedDice(imager: "images/dice1.png"),
-          ExpandedDice(imager: "images/dice2.png"),
+          ExpandedDice(
+            imager: "images/dice1.png",
+            textDetail: "Left button clicked",
+          ),
+          ExpandedDice(
+            imager: "images/dice2.png",
+            textDetail: "Right button clicked",
+          ),
         ],
       ),
     );
@@ -43,7 +49,7 @@ class ExpandedDice extends StatelessWidget {
     return Expanded(
       child: TextButton(
         child: Image.asset(imager),
-        onPressed: () => print('baho kag otot haha'),
+        onPressed: () => print(textDetail),
       ),
     );
   }
