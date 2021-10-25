@@ -16,15 +16,15 @@ void main() {
 }
 
 class DicePage extends StatelessWidget {
-  int leftDiceNumber = 1;
   @override
   Widget build(BuildContext context) {
+    int leftDiceNumber = 1;
     return Center(
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           ExpandedDice(
-            imager: "images/dice1.png",
+            imager: "images/dice1$leftDiceNumber.png",
             textDetail: "Left button clicked",
           ),
           ExpandedDice(
