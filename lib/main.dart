@@ -25,11 +25,9 @@ class DicePage extends StatelessWidget {
         children: [
           ExpandedDice(
             imager: "images/dice1$leftDiceNumber.png",
-            textDetail: "Left button clicked",
           ),
           ExpandedDice(
             imager: "images/dice2.png",
-            textDetail: "Right button clicked",
           ),
         ],
       ),
@@ -40,18 +38,16 @@ class DicePage extends StatelessWidget {
 class ExpandedDice extends StatelessWidget {
   const ExpandedDice({
     @required this.imager,
-    @required this.textDetail,
   });
 
   final String imager;
-  final String textDetail;
 
   @override
   Widget build(BuildContext context) {
     return Expanded(
       child: TextButton(
         child: Image.asset(imager),
-        onPressed: () => print(textDetail),
+        onPressed: () {},
       ),
     );
   }
