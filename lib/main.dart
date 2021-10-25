@@ -30,16 +30,15 @@ class DicePage extends StatelessWidget {
 }
 
 class ExpandedDice extends StatelessWidget {
-  const ExpandedDice({
-    Key key,
-  }) : super(key: key);
+  const ExpandedDice({@required this.imager});
 
+  final String imager;
   @override
   Widget build(BuildContext context) {
     return Expanded(
         child: Padding(
       padding: const EdgeInsets.all(16),
-      child: Image.asset("images/dice1.png"),
+      child: Image.asset(imager),
     ));
   }
 }
