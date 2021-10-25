@@ -23,15 +23,10 @@ class DicePage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Expanded(
-            child: Image(
-              image: AssetImage('images/dice1.png'),
-              width: 100,
-            ),
+            child: Image.asset("images/dice1.png"),
           ),
           Expanded(
-            child: Image(
-              image: AssetImage('images/dice2.png'),
-            ),
+            child: Image.asset("images/dice2.png"),
           )
         ],
       ),
