@@ -22,16 +22,24 @@ class DicePage extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Expanded(
-              child: Padding(
-            padding: const EdgeInsets.all(16),
-            child: Image.asset("images/dice1.png"),
-          )),
-          Expanded(
-            child: Image.asset("images/dice2.png"),
-          )
+          ExpandedDice(),
         ],
       ),
     );
+  }
+}
+
+class ExpandedDice extends StatelessWidget {
+  const ExpandedDice({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Expanded(
+        child: Padding(
+      padding: const EdgeInsets.all(16),
+      child: Image.asset("images/dice1.png"),
+    ));
   }
 }
