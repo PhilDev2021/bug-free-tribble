@@ -18,7 +18,6 @@ void main() {
 class DicePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    int leftDiceNumber = 4;
     return Center(
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -62,6 +61,8 @@ class UpdateOnPress extends StatefulWidget {
 }
 
 class _UpdateOnPressState extends State<UpdateOnPress> {
+  int leftDiceNumber = 1;
+  int rightDiceNumer = 1;
   @override
   Widget build(BuildContext context) {
     return Container();
