@@ -37,12 +37,9 @@ class ExpandedDice extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Expanded(
-        child: Padding(
-      padding: const EdgeInsets.all(16),
-      child: TextButton(
-        child: Image.asset(imager),
-        onPressed: () {},
-      ),
+        child: TextButton(
+      child: Image.asset(imager),
+      onPressed: () {},
     ));
   }
 }
