@@ -39,7 +39,10 @@ class ExpandedDice extends StatelessWidget {
     return Expanded(
         child: Padding(
       padding: const EdgeInsets.all(16),
-      child: Image.asset(imager),
+      child: TextButton(
+        child: Image.asset(imager),
+        onPressed: () {},
+      ),
     ));
   }
 }
