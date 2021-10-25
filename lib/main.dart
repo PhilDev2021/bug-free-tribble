@@ -52,3 +52,18 @@ class ExpandedDice extends StatelessWidget {
     );
   }
 }
+
+class UpdateOnPress extends StatefulWidget {
+  final Stream<int> stream;
+  UpdateOnPress({this.stream});
+
+  @override
+  _UpdateOnPressState createState() => _UpdateOnPressState();
+}
+
+class _UpdateOnPressState extends State<UpdateOnPress> {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
