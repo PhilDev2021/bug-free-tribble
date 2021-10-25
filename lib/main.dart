@@ -16,6 +16,7 @@ void main() {
 }
 
 class DicePage extends StatelessWidget {
+  int leftDiceNumber = 1;
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -44,6 +45,7 @@ class ExpandedDice extends StatelessWidget {
 
   final String imager;
   final String textDetail;
+
   @override
   Widget build(BuildContext context) {
     return Expanded(
