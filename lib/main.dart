@@ -31,15 +31,19 @@ class DicePage extends StatelessWidget {
 }
 
 class ExpandedDice extends StatelessWidget {
-  const ExpandedDice({@required this.imager});
+  const ExpandedDice({
+    @required this.imager,
+    @required this.textDetail,
+  });
 
   final String imager;
+  final String textDetail;
   @override
   Widget build(BuildContext context) {
     return Expanded(
       child: TextButton(
         child: Image.asset(imager),
-        onPressed: () {},
+        onPressed: () => print('baho kag otot haha'),
       ),
     );
   }
