@@ -49,7 +49,9 @@ class _NewWidgetState extends State<NewWidget> {
       child: TextButton(
         child: Image.asset("images/dice$diceNo.png"),
         onPressed: () {
-          setState(() {});
+          setState(() {
+            diceNo++;
+          });
         },
       ),
     );
