@@ -22,49 +22,20 @@ class DicePage extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          ExpandedDice(
-            imager: "images/dice$leftDiceNumber.png",
+          Expanded(
+            child: TextButton(
+              child: Image.asset("images/dice1.png"),
+              onPressed: () {},
+            ),
           ),
-          ExpandedDice(
-            imager: "images/dice$leftDiceNumber.png",
+          Expanded(
+            child: TextButton(
+              child: Image.asset("images/dice2.png"),
+              onPressed: () {},
+            ),
           ),
         ],
       ),
     );
-  }
-}
-
-class ExpandedDice extends StatelessWidget {
-  const ExpandedDice({
-    @required this.imager,
-  });
-
-  final String imager;
-
-  @override
-  Widget build(BuildContext context) {
-    return Expanded(
-      child: TextButton(
-        child: Image.asset(imager),
-        onPressed: () {},
-      ),
-    );
-  }
-}
-
-class UpdateOnPress extends StatefulWidget {
-  final Stream<int> stream;
-  UpdateOnPress({this.stream});
-
-  @override
-  _UpdateOnPressState createState() => _UpdateOnPressState();
-}
-
-class _UpdateOnPressState extends State<UpdateOnPress> {
-  int leftDiceNumber = 1;
-  int rightDiceNumer = 1;
-  @override
-  Widget build(BuildContext context) {
-    return Container();
   }
 }
