@@ -28,9 +28,7 @@ class DicePage extends StatelessWidget {
               onPressed: () {},
             ),
           ),
-          NewWidget(
-            diceNo: 1,
-          ),
+          NewWidget(),
         ],
       ),
     );
