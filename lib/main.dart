@@ -18,6 +18,8 @@ void main() {
 class DicePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    var leftDice;
+    var rightDice;
     return Center(
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
