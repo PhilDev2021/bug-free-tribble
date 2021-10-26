@@ -33,14 +33,19 @@ class _DicePageState extends State<DicePage> {
         children: [
           Expanded(
             child: TextButton(
-              child: Image.asset("images/dice3.png"),
+              child: Image.asset("images/$leftDice.png"),
               onPressed: () {},
             ),
           ),
           Expanded(
             child: TextButton(
-              child: Image.asset("images/dice1.png"),
-              onPressed: () {},
+              child: Image.asset("images/dice$rightDice.png"),
+              onPressed: () {
+                setState(() {
+                  leftDice =5;
+                  rightDice = 5;
+                });
+              },
             ),
           )
         ],
