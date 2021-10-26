@@ -28,13 +28,29 @@ class DicePage extends StatelessWidget {
               onPressed: () {},
             ),
           ),
-          Expanded(
-            child: TextButton(
-              child: Image.asset("images/dice2.png"),
-              onPressed: () {},
-            ),
+          NewWidget(
+            diceNo: 1,
           ),
         ],
+      ),
+    );
+  }
+}
+
+class NewWidget extends StatefulWidget {
+  State<NewWidget> createState() => _NewWidgetState();
+}
+
+class _NewWidgetState extends State<NewWidget> {
+  @override
+  Widget build(BuildContext context) {
+    int diceNo = 1;
+    return Expanded(
+      child: TextButton(
+        child: Image.asset("images/dice$diceNo.png"),
+        onPressed: () {
+          setState(() {});
+        },
       ),
     );
   }
