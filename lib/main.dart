@@ -18,15 +18,15 @@ void main() {
 class DicePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    var leftDice;
-    var rightDice;
+    int leftDice;
+    int rightDice;
     return Center(
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Expanded(
             child: TextButton(
-              child: Image.asset("images/dice1.png"),
+              child: Image.asset("images/dice3.png"),
               onPressed: () {},
             ),
           ),
