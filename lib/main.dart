@@ -33,13 +33,21 @@ class _DicePageState extends State<DicePage> {
           Expanded(
             child: TextButton(
               child: Image.asset("images/dice$leftDice.png"),
-              onPressed: () {},
+              onPressed: () {
+                setState(() {
+                  leftDice = Random().nextInt(6);
+                });
+              },
             ),
           ),
           Expanded(
             child: TextButton(
               child: Image.asset("images/dice$rightDice.png"),
-              onPressed: () {},
+              onPressed: () {
+                setState(() {
+                  rightDice = Random().nextInt(6);
+                });
+              },
             ),
           )
         ],
