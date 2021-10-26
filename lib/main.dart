@@ -22,10 +22,11 @@ class DicePage extends StatefulWidget {
 }
 
 class _DicePageState extends State<DicePage> {
-  @override
-  Widget build(BuildContext context) {
    int leftDice;
     int rightDice;
+  @override
+  Widget build(BuildContext context) {
+  
     return Center(
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
