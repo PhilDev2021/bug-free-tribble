@@ -33,7 +33,9 @@ class _DicePageState extends State<DicePage> {
             child: TextButton(
               child: Image.asset("images/$leftDice.png"),
               onPressed: () {
-                leftDice = 2;
+                setState(() {
+                  leftDice = 2;
+                });
               },
             ),
           ),
@@ -41,7 +43,9 @@ class _DicePageState extends State<DicePage> {
             child: TextButton(
               child: Image.asset("images/dice$rightDice.png"),
               onPressed: () {
-                rightDice = 5;
+                setState(() {
+                  rightDice = 5;
+                });
               },
             ),
           )
